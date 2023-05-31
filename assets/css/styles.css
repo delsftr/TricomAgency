@@ -137,11 +137,16 @@
   }
 
   /* service */
-  #services .title{
-    text-align: center;
+  .mobile-services{
+    background-color: #d9d9d942;
   }
 
-  #services .row{
+  .mobile-services .title{
+    text-align: center;
+    color: #0659A7;
+  }
+
+  #services{
     display: none;
   }
 
@@ -191,6 +196,10 @@
   }
 
   /* service */
+  .mobile-services{
+    display: none;
+  }
+
 }
 
 
