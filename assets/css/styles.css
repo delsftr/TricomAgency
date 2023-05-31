@@ -94,6 +94,11 @@
   font-size: 14px;
 }
 
+/* FOOTER */
+.footer {
+  background-color: var(--dark-blue);
+}
+
 /* MEDIA QUERY */
 
 /* MOBILE */
@@ -154,6 +159,22 @@
     width: 10rem;
     height: 10rem;
   }
+
+  .footer {
+    /* display: block !important; */
+    padding: 7% 15% 7% 15%;
+  }
+
+  .footer .row .sosmed{
+    display: flex;
+    justify-content: space-evenly;
+    /* display: block !important; */
+    /* grid-template-columns: 85% auto; */
+  }
+
+  /* .footer .row .col {
+    grid-template-columns: 30% auto;
+  } */
 }
 
 /* MOBILE LANDSCAPE*/
@@ -199,6 +220,15 @@
   .mobile-services {
     display: none;
   }
+
+  /* footer */
+  .footer {
+    padding: 2% 5% 1% 15%;
+  }
+
+  .footer .row .col {
+    grid-template-columns: 30% auto;
+  }
 }
 
 /* TABLET LANDSCAPE*/
@@ -236,6 +266,15 @@
   .mobile-services {
     display: none;
   }
+
+  /* footer */
+  .footer {
+    padding: 2% 5% 1% 15%;
+  }
+
+  .footer .row .col {
+    grid-template-columns: 30% auto;
+  }
 }
 
 /* LAPTOP & LAPTOP LARGE*/
@@ -267,6 +306,19 @@
   /* service */
   .mobile-services {
     display: none;
+  }
+
+  /* footer */
+  .footer {
+    padding: 2% 5% 1% 15%;
+  }
+
+  .footer .row{
+    grid-template-columns: 85% auto;
+  }
+
+  .footer .row .col {
+    grid-template-columns: 30% auto;
   }
 }
 
@@ -308,6 +360,15 @@
   /* service */
   .mobile-services {
     display: none;
+  }
+
+  /* footer */
+  .footer {
+    padding: 2% 5% 1% 15%;
+  }
+
+  .footer .row .col {
+    grid-template-columns: 30% auto;
   }
 }
 
@@ -395,10 +456,6 @@
   padding: 2rem 6rem;
 }
 
-/* .title-clients {
-  padding: 50px 0px 30px 600px;
-} */
-
 /* ARTICLE */
 .owl-nav {
   text-align: center;
@@ -422,12 +479,6 @@ body > section:nth-child(9) > div > div.owl-nav > button.owl-next > span {
   height: 12.5rem;
 }
 
-/* FOOTER */
-.footer {
-  background-color: var(--dark-blue);
-  padding: 2% 5% 1% 15%;
-}
-
 /* ABOUT US PAGE */
 
 /* SOCIAL MEDIA PAGE */
@@ -445,17 +496,3 @@ body > section:nth-child(9) > div > div.owl-nav > button.owl-next > span {
   background-color: #1b325e;
   color: #ffffff;
 }
-
-/* DEKSTOP */
-/* @media (max-width: 1950px) {
-
-} */
-
-/* LAPTOP */
-/* @media (max-width: 1366px) {
-
-  .sub-title {
-    font-size: 1rem;
-    padding-right: 50%;
-  }
-} */
