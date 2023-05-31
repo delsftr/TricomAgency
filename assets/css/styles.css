@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+  --dark-blue: #1b325e;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid{
+  padding: 6% 10% 7% 15%;
+}
+
+/* NAVBAR */
+.nav-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: var(--grey);
+  height: 100%;
+  padding-top: 20px;
+  z-index: 5;
+}
+
+.nav-container .container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-container .side-nav .nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+}
+
+.nav-container .side-nav .nav-menu .nav-item {
+  rotate: 270deg;
+  font-family: "Poppins", sans-serif;
+  margin-top: 4rem !important;
+  margin-bottom: 4.5rem !important;
+}
+
+/* NAVBAR TABLET & MOBILE */
+.top-nav {
+  background-color: var(--grey);
+}
+
+/* HOMEPAGE */
+.homepage {
+  min-height: 100vh;
+  align-items: center;
+  background-image: url("../img/Banner\ TRICOM\ Home\ 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title-hp{
+  font-family: "Rubik", sans-serif;
+}
+
+.sub-title{
+  font-family: "Poppins", sans-serif;
+}
+
+/* ABOUT US */
+#about-us .row {
+  font-family: "Poppins", sans-serif;
+}
+
+#about-us .row .col .card-body .btn{
+  background-color: var(--dark-blue);
+}
+
+/* SERVICES */
+#services {
+  background-color: #d9d9d942;
+}
+
+.cb-services {
+  font-size: 16px;
+}
+
+.btn {
+  font-size: 14px;
+}
+
+/* MEDIA QUERY */
+
+/* MOBILE */
+@media (min-width: 0px) and (max-width: 576px){
+  .side-nav{
+    display: none;
+  }
+
+  .container-fluid {
+    padding: 10%;
+  }
+
+  /* homepage */
+  .title-hp {
+    padding-top: 70%;
+    font-size: 2rem;
+  }
+
+  .sub-title {
+    font-size: 1rem;
+    padding-right: 35%;
+  }
+
+  /* about us */
+  #about-us .row {
+    flex-direction: column-reverse;
+  }
+
+  #about-us .row .col .card-body{
+    text-align: center !important;
+  }
+
+  #about-us .row .col .card-title{
+    font-size: 1.2rem !important;
+    padding-top: 5%;
+  }
+
+  #about-us .row .col .card-body .btn{
+    width: 35% !important;
+    justify-self: center !important;
+  }
+
+  /* service */
+  #services .title{
+    text-align: center;
+  }
+
+  #services .row{
+    display: none;
+  }
+
+  .location {
+    width: 10rem;
+    height: 10rem;
+  }
+}
+
+/* MOBILE LANDSCAPE*/
+@media (min-width: 577px) and (max-width: 768px){
+  .side-nav{
+    display: none;
+  }
+
+  .container-fluid {
+    padding: 10%;
+  }
+
+  /* homepage */
+  .title-hp {
+    font-size: 3.3rem;
+  }
+
+  .sub-title {
+    font-size: 1rem;
+    padding-right: 30%;
+  }
+
+  /* about us */
+  #about-us .row {
+    flex-direction: column-reverse;
+  }
+
+  #about-us .row .col .card-body{
+    text-align: center !important;
+  }
+
+  #about-us .row .col .card-title{
+    font-size: 1.5rem !important;
+    padding-top: 5%;
+  }
+
+  #about-us .row .col .card-body .btn{
+    width: 20% !important;
+    justify-self: center !important;
+  }
+
+  /* service */
+}
+
+
+/* TABLET LANDSCAPE*/
+@media (min-width: 769px) and (max-width: 1024px){
+  .top-nav{
+    display: none;
+  }
+
+  /* homepage */
+  .title-hp {
+    font-size: 4rem;
+  }
+
+  .sub-title {
+    font-size: 1.1rem;
+    padding-right: 40%;
+  }
+
+  /* about us */
+  #about-us .row{
+    display: grid;
+    grid-template-columns: 60% auto;
+  }
+
+  #about-us .row .col .card-title{
+    font-size: 1.5rem !important;
+    /* padding-top: 5%; */
+  }
+
+  #about-us .row .col .card-body .btn{
+    width: 25%;
+  }
+}
+
+/* LAPTOP & LAPTOP LARGE*/
+@media (min-width: 1025px) and (max-width: 1440px){
+  .top-nav{
+    display: none;
+  }
+
+  /* homepage */
+  .title-hp {
+    font-size: 4.5rem;
+  }
+
+  .sub-title {
+    font-size: 1.3rem;
+    padding-right: 50%;
+  }
+
+  /* about us */
+  #about-us .row{
+    display: grid;
+    grid-template-columns: 63% auto;
+  }
+
+  #about-us .row .col .card-body .btn{
+    width: 18%;
+  }
+}
+
+/* DEKSTOP PC*/
+@media (min-width: 1441px) and (max-width: 1950px){
+  .top-nav{
+    display: none;
+  }
+
+  /* homepage */
+  .title-hp {
+    font-size: 6rem;
+  }
+
+  .sub-title {
+    font-size: 1.5rem;
+    padding-right: 45%;
+  }
+
+  /* about us */
+  #about-us .row{
+    display: grid;
+    grid-template-columns: 60% auto;
+  }
+
+  #about-us .row .col .card-title{
+    font-size: 2.5rem !important;
+  }
+
+  #about-us .row .col .card-text{
+    font-size: 1.5rem !important;
+  }
+
+  #about-us .row .col .card-body .btn{
+    font-size: 1.2rem;
+    width: 18%;
+  }
+}
+
+/* TESTIMONY */
+.customer-testimony{
+  background-color: #5f3daf;
+}
+
+.title-testimony{
+  color: #ffffff;
+}
+
+.single-testimony {
+  border: 5px solid #ffffff;
+  border-radius: 2rem;
+  padding: 5%; 
+  margin: 1% 15%;
+}
+
+.single-testimony:before {
+  content: '\f10d';
+  font-family: FontAwesome;
+  color: #ffffff;
+  font-size: 4rem;
+  position: absolute;
+  background: #5f3daf;
+  left: 130px;
+  top: -35px;
+  width: 100px;
+  height: 100px;
+}
+
+.single-testimony:after {
+  content: '\f10e';
+  font-family: FontAwesome;
+  color: #ffffff;
+  font-size: 4rem;
+  position: absolute;
+  background: #5f3daf;
+  right: 130px;
+  bottom: -5px;
+  width: 100px;
+  height: 100px;
+}
+
+.owl-dots{
+  margin-top: 2%;
+  text-align: center;
+}
+
+.owl-dots button{
+  background-color: #ffffff !important;
+  width: 7px;
+  height: 7px;
+  border-radius: 2rem;
+  margin-right: 1%;
+  transition: 0.3s;
+}
+
+.owl-dots button.active{
+width: 15px;
+}
+
+/* OUR CLIENTS */
+.our-clients {
+  padding-bottom: 70px;
+}
+
+#our-clients .container .row.mb-4 .col{
+  align-self: center;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+
+#our-clients .container .row.mb-4 .col:hover{
+  filter: grayscale(0);
+}
+
+.title-clients {
+  margin-top: -2rem;
+  margin-bottom: -1rem;
+}
+
+.sub-clients {
+  padding: 2rem 6rem;
+}
+
+/* .title-clients {
+  padding: 50px 0px 30px 600px;
+} */
+
+/* ARTICLE */
+.owl-nav{
+  text-align: center;
+}
+
+body > section:nth-child(9) > div > div.owl-nav > button.owl-prev.disabled > span {
+  font-size: 3rem;
+}
+
+body > section:nth-child(9) > div > div.owl-nav > button.owl-next > span {
+  font-size: 3rem;
+}
+
+/* CONTACT */
+.contact {
+  padding-bottom: 70px;
+}
+
+.location {
+  width: 20rem;
+  height: 12.5rem;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--dark-blue);
+  padding: 20px 0px 0px 0px;
+}
+
+/* ABOUT US PAGE */
+
+
+/* SOCIAL MEDIA PAGE */
+.social-media-page {
+  padding-top: 45px;
+  padding-bottom: 30px;
+}
+
+.list-group-item:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.list-group-item.active-menu {
+  background-color: #1b325e;
+  color: #ffffff;
+}
+
+/* DEKSTOP */
+/* @media (max-width: 1950px) {
+
+} */
+
+/* LAPTOP */
+/* @media (max-width: 1366px) {
+
+  .sub-title {
+    font-size: 1rem;
+    padding-right: 50%;
+  }
+} */
