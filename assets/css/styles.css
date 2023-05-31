@@ -233,6 +233,11 @@
   #about-us .row .col .card-body .btn{
     width: 25%;
   }
+
+  /* service */
+  .mobile-services{
+    display: none;
+  }
 }
 
 /* LAPTOP & LAPTOP LARGE*/
@@ -259,6 +264,11 @@
 
   #about-us .row .col .card-body .btn{
     width: 18%;
+  }
+
+  /* service */
+  .mobile-services{
+    display: none;
   }
 }
 
@@ -295,6 +305,11 @@
   #about-us .row .col .card-body .btn{
     font-size: 1.2rem;
     width: 18%;
+  }
+
+  /* service */
+  .mobile-services{
+    display: none;
   }
 }
 
