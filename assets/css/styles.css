@@ -164,27 +164,28 @@
     padding: 7% 15% 7% 15%;
   }
 
-  .footer .r-footer{
+  .footer .r-footer {
     flex-direction: column-reverse;
   }
 
-  .footer .copyright{
+  .footer .copyright {
     flex-direction: column-reverse;
   }
 
-  .footer .copyright .sosmed{
+  .footer .copyright .sosmed {
     display: flex;
     justify-content: space-evenly;
   }
 
-  .footer .trisula{
+  .footer .trisula {
     display: block;
     align-self: center;
   }
 
-  .footer .trisula .logo{
+  .footer .trisula .logo {
     width: 15rem;
   }
+}
 
 /* MOBILE LANDSCAPE*/
 @media (min-width: 577px) and (max-width: 768px) {
@@ -322,7 +323,7 @@
     padding: 2% 5% 1% 15%;
   }
 
-  .footer .row{
+  .footer .row {
     grid-template-columns: 85% auto;
   }
 
