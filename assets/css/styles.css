@@ -160,15 +160,21 @@
     height: 10rem;
   }
 
+  /* footer */
   .footer {
     padding: 7% 15% 7% 15%;
+    text-align: center;
   }
 
-  .footer .copyright {
+  .footer .r-copyright {
     flex-direction: column-reverse;
   }
 
-  .footer .copyright .sosmed {
+  .footer .r-copyright .copyright{
+    font-size: 0.8rem;
+  }
+
+  .footer .r-copyright .sosmed {
     display: flex;
     justify-content: space-evenly;
   }
@@ -178,8 +184,8 @@
     align-self: center;
   }
 
-  .footer .trisula .logo {
-    width: 15rem;
+  .footer .trisula .logo img{
+    width: 14rem;
   }
 }
 
