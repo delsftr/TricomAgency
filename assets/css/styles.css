@@ -164,10 +164,6 @@
     padding: 7% 15% 7% 15%;
   }
 
-  .footer .r-footer {
-    flex-direction: column-reverse;
-  }
-
   .footer .copyright {
     flex-direction: column-reverse;
   }
