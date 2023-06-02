@@ -161,21 +161,30 @@
   }
 
   .footer {
-    /* display: block !important; */
     padding: 7% 15% 7% 15%;
   }
 
-  .footer .row .sosmed{
-    display: flex;
-    justify-content: space-evenly;
-    /* display: block !important; */
-    /* grid-template-columns: 85% auto; */
+  .footer .r-footer{
+    flex-direction: column-reverse;
   }
 
-  /* .footer .row .col {
-    grid-template-columns: 30% auto;
-  } */
-}
+  .footer .copyright{
+    flex-direction: column-reverse;
+  }
+
+  .footer .copyright .sosmed{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .footer .trisula{
+    display: block;
+    align-self: center;
+  }
+
+  .footer .trisula .logo{
+    width: 15rem;
+  }
 
 /* MOBILE LANDSCAPE*/
 @media (min-width: 577px) and (max-width: 768px) {
