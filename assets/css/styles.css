@@ -162,7 +162,7 @@
 
   /* footer */
   .footer {
-    padding: 7% 15% 7% 15%;
+    padding: 7% 15% 5% 15%;
     text-align: center;
   }
 
@@ -185,7 +185,7 @@
   }
 
   .footer .trisula .logo img{
-    width: 14rem;
+    width: 5rem;
   }
 }
 
