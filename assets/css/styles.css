@@ -21,6 +21,10 @@
   color: #0659a7;
 }
 
+.text{
+  font-family: "Poppins", sans-serif;
+}
+
 /* NAVBAR */
 .nav-container {
   position: fixed;
