@@ -17,6 +17,10 @@
   padding: 6% 10% 7% 15%;
 }
 
+.title{
+  color: #0659a7;
+}
+
 /* NAVBAR */
 .nav-container {
   position: fixed;
@@ -111,6 +115,10 @@
     padding: 10%;
   }
 
+  .text{
+    font-size: 0.8rem !important;
+  }
+
   /* homepage */
   .title-hp {
     padding-top: 70%;
@@ -118,7 +126,7 @@
   }
 
   .sub-title {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-right: 35%;
   }
 
@@ -155,6 +163,16 @@
     display: none;
   }
 
+  /* contact */
+  .title{
+    font-size: 1.5rem !important;
+  }
+
+  #contact .row {
+    display: grid;
+    grid-template-columns: 12% auto;
+  }
+
   .location {
     width: 10rem;
     height: 10rem;
@@ -170,8 +188,8 @@
     flex-direction: column-reverse;
   }
 
-  .footer .r-copyright .copyright{
-    font-size: 0.8rem;
+  .footer .r-copyright .copyright {
+    font-size: 0.5rem;
   }
 
   .footer .r-copyright .sosmed {
@@ -184,7 +202,7 @@
     align-self: center;
   }
 
-  .footer .trisula .logo img{
+  .footer .trisula .logo img {
     width: 5rem;
   }
 }
@@ -235,11 +253,15 @@
 
   /* footer */
   .footer {
-    padding: 2% 5% 1% 15%;
+    padding: 2% 5% 0% 15%;
   }
 
   .footer .row .col {
     grid-template-columns: 30% auto;
+  }
+
+  .footer .trisula .logo img {
+    width: 5rem;
   }
 }
 
@@ -287,6 +309,10 @@
   .footer .row .col {
     grid-template-columns: 30% auto;
   }
+
+  .footer .trisula .logo img {
+    width: 7rem;
+  }
 }
 
 /* LAPTOP & LAPTOP LARGE*/
@@ -331,6 +357,10 @@
 
   .footer .row .col {
     grid-template-columns: 30% auto;
+  }
+
+  .footer .trisula .logo img {
+    width: 10rem;
   }
 }
 
@@ -381,6 +411,10 @@
 
   .footer .row .col {
     grid-template-columns: 30% auto;
+  }
+
+  .footer .trisula .logo img {
+    width: 10rem;
   }
 }
 
@@ -483,7 +517,8 @@ body > section:nth-child(9) > div > div.owl-nav > button.owl-next > span {
 
 /* CONTACT */
 .contact {
-  padding-bottom: 70px;
+  /* padding-bottom: 70px; */
+  background-color: #d9d9d942;
 }
 
 .location {
