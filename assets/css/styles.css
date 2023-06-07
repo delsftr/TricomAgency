@@ -181,15 +181,15 @@
   }
 
   /* contact */
-  #contact .row {
+  #contact .r-info {
     display: grid;
     grid-template-columns: 12% auto;
   }
 
   .location {
     align-self: center;
-    width: 18rem !important;
-    height: 12rem !important;
+    width: 19rem !important;
+    height: 13rem !important;
   }
 
   /* footer */
@@ -255,10 +255,10 @@
     padding-top: 5%;
   }
 
-  /* #about-us .row .col .card-body .btn {
+  #about-us .row .col .card-body .btn {
     width: 20% !important;
     justify-self: center !important;
-  } */
+  }
 
   /* service */
   .mobile-services {
@@ -266,7 +266,7 @@
   }
 
   /* contact */
-  #contact .row {
+  #contact .r-info {
     display: grid;
     grid-template-columns: 7% auto;
   }
@@ -312,9 +312,9 @@
     /* padding-top: 5%; */
   }
 
-  /* #about-us .row .col .card-body .btn {
+  #about-us .row .col .card-body .btn {
     width: 25%;
-  } */
+  }
 
   /* service */
   .mobile-services {
@@ -322,7 +322,7 @@
   }
 
   /* contact */
-  #contact .row {
+  #contact .r-info {
     display: grid;
     grid-template-columns: 5% auto;
   }
@@ -363,9 +363,9 @@
     grid-template-columns: 63% auto;
   }
 
-  /* #about-us .row .col .card-body .btn {
+  #about-us .row .col .card-body .btn {
     width: 18%;
-  } */
+  }
 
   /* service */
   .mobile-services {
@@ -373,9 +373,23 @@
   }
 
   /* contact */
-  #contact .row {
+  #contact .text {
+    align-self: center;
+  }
+  
+  #contact .r-info {
     display: grid;
-    grid-template-columns: 4% auto;
+    grid-template-columns: 6% auto;
+  }
+
+  #contact .r-maps {
+    display: grid;
+    grid-template-columns: 65% auto;
+  }
+
+  .location {
+    width: 22rem;
+    height: 13rem;
   }
 
   /* footer */
@@ -437,7 +451,7 @@
   }
 
   /* contact */
-  #contact .row {
+  #contact .r-info {
     display: grid;
     grid-template-columns: 3% auto;
   }
@@ -558,10 +572,7 @@ body > section:nth-child(9) > div > div.owl-nav > button.owl-next > span {
 }
 
 /* CONTACT */
-.location {
-  width: 20rem;
-  height: 12.5rem;
-}
+
 
 /* ABOUT US PAGE */
 
