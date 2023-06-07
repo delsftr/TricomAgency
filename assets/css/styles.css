@@ -126,6 +126,7 @@
   #about-us{
     padding-top: 10% !important;
   }
+
   #about-us .row {
     flex-direction: column-reverse;
   }
@@ -178,6 +179,11 @@
     bottom: -0.6rem !important;
     width: 4rem !important;
     height: 4rem !important;
+  }
+
+  /* clients */
+  #our-clients .brand{
+    grid-template-columns: repeat(3, 1fr);
   }
 
   /* contact */
@@ -265,6 +271,11 @@
     display: none;
   }
 
+  /* clients */
+  #our-clients .brand{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   /* contact */
   #contact .r-info {
     display: grid;
@@ -321,6 +332,11 @@
     display: none;
   }
 
+  /* clients */
+  #our-clients .brand{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   /* contact */
   #contact .r-info {
     display: grid;
@@ -370,6 +386,17 @@
   /* service */
   .mobile-services {
     display: none;
+  }
+
+  /* clients */
+  #our-clients .brand{
+    grid-template-columns: repeat(5, 1fr);
+    text-align: center;
+  }
+
+  #our-clients .brand .col img{
+    width: 80%;
+    max-width: 80%;
   }
 
   /* contact */
@@ -448,6 +475,11 @@
   /* service */
   .mobile-services {
     display: none;
+  }
+
+  /* clients */
+  #our-clients .brand{
+    grid-template-columns: repeat(5, 1fr);
   }
 
   /* contact */
@@ -531,14 +563,19 @@
 }
 
 /* OUR CLIENTS */
-#our-clients .container .row.mb-4 .col {
+#our-clients .brand .col {
   align-self: center;
   cursor: pointer;
   filter: grayscale(1);
 }
 
-#our-clients .container .row.mb-4 .col:hover {
+#our-clients .brand .col:hover {
   filter: grayscale(0);
+}
+
+#our-clients .brand {
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 
 /* .our-clients {
@@ -570,9 +607,6 @@ body > section:nth-child(9) > div > div.owl-nav > button.owl-prev.disabled > spa
 body > section:nth-child(9) > div > div.owl-nav > button.owl-next > span {
   font-size: 3rem;
 }
-
-/* CONTACT */
-
 
 /* ABOUT US PAGE */
 
