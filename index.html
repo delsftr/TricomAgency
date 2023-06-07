@@ -83,7 +83,7 @@
   <div class="container-fluid homepage d-flex" id="homepage">
     <div class="homepage-body">
       <p class="title-hp lh-sm text-white">Connecting <br> Your Brand.</p>
-      <p class="sub-title lh-base fw-light text-white"><span class="fw-bold">TRICOM</span> is committed to helping you connect with customers through branding solutions, strategic and innovative approaches, as well as creative and effective marketing.</p>
+      <p class="sub-title text lh-base fw-light text-white"><span class="fw-bold">TRICOM</span> is committed to helping you connect with customers through branding solutions, strategic and innovative approaches, as well as creative and effective marketing.</p>
     </div>
   </div>
   <!--HOMEPAGE END-->
@@ -121,12 +121,10 @@
   <section class="container-fluid about-us" id="about-us">
     <div class="row">
       <div class="col">
-        <div class="card-body d-grid gap-3">
+        <div class="card-body text d-grid gap-3">
           <p class="card-title fs-3 lh-base fw-semibold">TRICOM Agency is prepared to serve as your company's digital solution.</p>
-          <!-- <br> -->
-          <p class="card-text text lh-base fw-light">Tricom Agency is a full-service digital marketing agency based in Jakarta, Indonesia. We are powered by a team of experts in website, social media, SEO, digital ads, analytics, and marketing who work with a growth mindset to deliver success for your business.</p>
-          <!-- <br> -->
-          <a href="about-us.html" class="btn btn-primary text-white rounded-5 border-0">Learn More</a>
+          <p class="card-text lh-base fw-light">Tricom Agency is a full-service digital marketing agency based in Jakarta, Indonesia. We are powered by a team of experts in website, social media, SEO, digital ads, analytics, and marketing who work with a growth mindset to deliver success for your business.</p>
+          <a href="about-us.html" class="btn btn-primary text text-white rounded-5 border-0 fw-light">Learn More</a>
         </div>
       </div>
       <div class="col align-self-center">
@@ -138,8 +136,8 @@
 
 
   <!-- OUR SERVICES -->
-  <section class="container-fluid services" id="services">
-    <p class="title fs-1 fw-bold" style="color: #0659A7">Our Services</p>
+  <section class="container-fluid services bg-grey" id="services">
+    <p class="title fs-1 fw-bold">Our Services</p>
     <div class="row" id="categories">
       <div class="col-md-3">
         <div class="card text-center" id="btncard">
@@ -160,7 +158,7 @@
                 <img src="assets/img/social media.png" class="img-fluid" alt="...">
               </div>
               <div class="col-md-10">
-                <div class="card-body cb-services">
+                <div class="card-body">
                   <div class="card-text">Social media has become a crucial component of modern business. With the help of TRICOM, you can effectively and economically engage with customers, create brand recognition, and boost sales.</div>
                   <br>
                   <a href="social-media.html" class="btn btn-primary text-white rounded-5 border-0">Learn More</a>
@@ -174,20 +172,78 @@
   <!-- OUR SERVICES END -->
 
   <!--SERVICES MOBILE VERSION -->
-  <section class="container-fluid mobile-services">
+  <section class="container-fluid mobile-services bg-grey">
     <p class="title fs-1 fw-bold">Our Services</p>
-    <div class="col">
-      <div class="card mh-50">
+    <div class="services-content owl-carousel">
+      <div class="card">
         <img src="assets/img/photography.jpg" style="height: 25rem;" alt="">
-        <div class="card-body" style="text-align: justify;">
-          <div class="title fw-semibold">Social Media</div>
-          <div class="text lh-base">Social media has become a crucial component of modern business. With the help of TRICOM, you can effectively and economically engage with customers, create brand recognition, and boost sales.
+        <div class="card-body text-center d-grid gap-2">
+          <div class="c-title fw-semibold">Social Media</div>
+          <div class="text lh-base fw-light justify-content-center">Social media has become a crucial component of modern business. With the help of TRICOM, you can effectively and economically engage with customers, create brand recognition, and boost sales.
           </div>
-          <br>
-          <a href="social-media.html" class="btn btn-primary text-white rounded-5 border-0">Learn More</a>
+          <a href="social-media.html" class="btn btn-primary text text-white rounded-5 border-0 fw-light">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/photography.jpg" style="height: 25rem;" alt="">
+        <div class="card-body text-center d-grid gap-2">
+          <div class="c-title fw-semibold">Photography</div>
+          <div class="text lh-base fw-light justify-content-center">Photography has become a crucial component of modern business. With the help of TRICOM, you can effectively and economically engage with customers, create brand recognition, and boost sales.
+          </div>
+          <a href="photography.html" class="btn btn-primary text text-white rounded-5 border-0 fw-light">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/video-production.jpg" style="height: 25rem;" alt="">
+        <div class="card-body text-center d-grid gap-2">
+          <div class="c-title fw-semibold">Video production</div>
+          <div class="text lh-base fw-light justify-content-center">Video production has become a crucial component of modern business. With the help of TRICOM, you can effectively and economically engage with customers, create brand recognition, and boost sales.
+          </div>
+          <a href="video-production.html" class="btn btn-primary text text-white rounded-5 border-0 fw-light">Learn More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/img/video-production.jpg" style="height: 25rem;" alt="">
+        <div class="card-body text-center d-grid gap-2">
+          <div class="c-title fw-semibold">Web Design</div>
+          <div class="text lh-base fw-light justify-content-center">Web design has become a crucial component of modern business. With the help of TRICOM, you can effectively and economically engage with customers, create brand recognition, and boost sales.
+          </div>
+          <a href="web-design.html" class="btn btn-primary text text-white rounded-5 border-0 fw-light">Learn More</a>
         </div>
       </div>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.services-content').owlCarousel({
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:5000,
+            smartSpeed:1500,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    // nav:true,
+                    dots:true
+                },
+                600:{
+                    items:1,
+                    // nav:false,
+                    dots:true
+                },
+                1000:{
+                    items:1,
+                    // nav:true,
+                    loop:false,
+                    dots:true
+                }
+            }
+        })
+      });
+    </script>
   </section>
 
   <!-- CUSTOMER TESTIMONY -->
@@ -199,7 +255,7 @@
           </p>
           <br>
           <div class="client-info">
-            <h5>Aiman Mansyur</h5>
+            <h5 class="name text fw-semibold">Aiman Mansyur</h5>
             <p>Manager PT Indomie Indonesia</p>
           </div>
         </div>
@@ -208,7 +264,7 @@
           </p>
           <br>
           <div class="client-info">
-            <h5>Aiman Mansyur</h5>
+            <h5 class="name text fw-semibold">Aiman Mansyur</h5>
             <p>Manager PT Indomie Indonesia</p>
           </div>
         </div>
@@ -217,7 +273,7 @@
           </p>
           <br>
           <div class="client-info">
-            <h5>Aiman Mansyur</h5>
+            <h5 class="name text fw-semibold">Aiman Mansyur</h5>
             <p>Manager PT Indomie Indonesia</p>
           </div>
         </div>
@@ -226,7 +282,7 @@
           </p>
           <br>
           <div class="client-info">
-            <h5>Aiman Mansyur</h5>
+            <h5 class="name text fw-semibold">Aiman Mansyur</h5>
             <p>Manager PT Indomie Indonesia</p>
           </div>
         </div>
@@ -267,19 +323,19 @@
   <!-- CUSTOMER TESTIMONY END -->
 
   <!-- OUR CLIENTS -->
-  <section class="container-fluid our-clients" id="our-clients" style="background-color: #d9d9d942;">
-    <p class="title fs-1 fw-bold text-center" style="color: #0659A7 ">Our Satisfied Clients</p>
-    <p class="text fs-5 fw-light text-center text-dark">We've have the pleasesure of working with many amazing clients.</p>
+  <section class="container-fluid our-clients bg-grey" id="our-clients">
+    <p class="title fs-1 fw-bold text-center">Our Satisfied Clients</p>
+    <p class="sub-clients text fs-5 fw-light text-center text-dark">We've have the pleasesure of working with many amazing clients.</p>
     <div class="container text-center">
       <div class="row mb-4">
         <div class="col">
-          <img src="assets/img/logo_jn.png" class="img-fluid rounded-2 border-5" alt="...">
+          <img src="assets/img/jn.png" class="img-fluid rounded-2 border-5" alt="...">
         </div>
         <div class="col">
-          <img src="assets/img/logo_jobb.png" class="img-fluid rounded-2" alt="...">
+          <img src="assets/img/logojobb.png" class="img-fluid rounded-2" alt="...">
         </div>
         <div class="col">
-          <img src="assets/img/logo_chitose.png" class="img-fluid rounded-2" alt="...">
+          <img src="assets/img/chitose.jpg" class="img-fluid rounded-2" alt="...">
         </div>
         <div class="col">
           <img src="assets/img/logo_ibox.png" class="img-fluid rounded-2" alt="...">
@@ -300,7 +356,7 @@
         </div>
       </div>
     </div>
-    <p class="text fs-5 fw-light text-center text-dark">Sudah banyak perusahaan yang telah mempercayakan brandnya untuk dikelola oleh agensi kami. Ayo mulai wujudkan brand impian mu bersama kami!</p>
+    <p class="sub-clients text fs-5 fw-light text-center text-dark">Sudah banyak perusahaan yang telah mempercayakan brandnya untuk dikelola oleh agensi kami. Ayo mulai wujudkan brand impian mu bersama kami!</p>
   </section>
   <!-- OUR CLIENTS END -->
 
@@ -372,11 +428,11 @@
   <!-- ARTICLE END -->
 
   <!-- CONTACT -->
-  <section class="container-fluid contact" id="contact">
+  <section class="container-fluid contact bg-grey" id="contact">
     <p class="title fs-1 fw-bold">Let’s discuss your project!</p>
     <div class="col text">
       <div class="row">
-        <div class="col icon text-center">
+        <div class="col icon">
           <i class="fa-brands fa-whatsapp" style="color: #0659a7; font-size: 25px;"></i>
         </div>
         <div class="col">
@@ -408,7 +464,6 @@
         class="location" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
-
   <!-- CONTACT END -->
 
   <!-- FOOTER -->

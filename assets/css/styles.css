@@ -17,11 +17,19 @@
   padding: 6% 10% 7% 15%;
 }
 
-.title{
+.bg-grey {
+  background-color: #d9d9d942;
+}
+
+.footer {
+  background-color: var(--dark-blue);
+}
+
+.title {
   color: #0659a7;
 }
 
-.text{
+.text {
   font-family: "Poppins", sans-serif;
 }
 
@@ -76,36 +84,10 @@
   font-family: "Rubik", sans-serif;
 }
 
-.sub-title {
-  font-family: "Poppins", sans-serif;
-}
-
 /* ABOUT US */
-#about-us .row {
-  font-family: "Poppins", sans-serif;
-}
-
-#about-us .row .col .card-body .btn {
+/* #about-us .row .col .card-body .btn {
   background-color: var(--dark-blue);
-}
-
-/* SERVICES */
-#services {
-  background-color: #d9d9d942;
-}
-
-.cb-services {
-  font-size: 16px;
-}
-
-.btn {
-  font-size: 14px;
-}
-
-/* FOOTER */
-.footer {
-  background-color: var(--dark-blue);
-}
+} */
 
 /* MEDIA QUERY */
 
@@ -117,9 +99,15 @@
 
   .container-fluid {
     padding: 10%;
+    padding-top: 7%;
   }
 
-  .text{
+  .title{
+    font-size: 1.5rem !important;
+    text-align: center;
+  }
+
+  .text {
     font-size: 0.8rem !important;
   }
 
@@ -135,6 +123,9 @@
   }
 
   /* about us */
+  #about-us{
+    padding-top: 10% !important;
+  }
   #about-us .row {
     flex-direction: column-reverse;
   }
@@ -148,30 +139,48 @@
     padding-top: 5%;
   }
 
-  #about-us .row .col .card-body .btn {
-    width: 35% !important;
-    justify-self: center !important;
+  .btn {
+    background-color: var(--dark-blue);
+    /* width: 35%; */
+    justify-self: center;
+    /* margin-top: -5%; */
   }
 
   /* service */
-  .mobile-services {
-    background-color: #d9d9d942;
-  }
-
-  .mobile-services .title {
-    text-align: center;
-    color: #0659a7;
-  }
-
   #services {
     display: none;
   }
 
-  /* contact */
-  .title{
-    font-size: 1.5rem !important;
+  /* .mobile-services .service-content .card .card-body .title{
+    text-align: center;
+    font-size: 1.2rem !important;
+    color: #0659a7;
+  } */
+
+  /* testimony */
+  .single-testimony {
+    border: 0.2rem solid #ffffff !important;
+    margin: 1% 1% !important;
+    padding: 8% !important;
   }
 
+  .single-testimony:before {
+    font-size: 2.5rem !important;
+    left: -0.5rem !important;
+    top: -1.5rem !important;
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+
+  .single-testimony:after {
+    font-size: 2.5rem !important;
+    right: -0.7rem !important;
+    bottom: -0.6rem !important;
+    width: 4rem !important;
+    height: 4rem !important;
+  }
+
+  /* contact */
   #contact .row {
     display: grid;
     grid-template-columns: 12% auto;
@@ -246,14 +255,20 @@
     padding-top: 5%;
   }
 
-  #about-us .row .col .card-body .btn {
+  /* #about-us .row .col .card-body .btn {
     width: 20% !important;
     justify-self: center !important;
-  }
+  } */
 
   /* service */
   .mobile-services {
     display: none;
+  }
+
+  /* contact */
+  #contact .row {
+    display: grid;
+    grid-template-columns: 7% auto;
   }
 
   /* footer */
@@ -297,13 +312,19 @@
     /* padding-top: 5%; */
   }
 
-  #about-us .row .col .card-body .btn {
+  /* #about-us .row .col .card-body .btn {
     width: 25%;
-  }
+  } */
 
   /* service */
   .mobile-services {
     display: none;
+  }
+
+  /* contact */
+  #contact .row {
+    display: grid;
+    grid-template-columns: 5% auto;
   }
 
   /* footer */
@@ -342,13 +363,19 @@
     grid-template-columns: 63% auto;
   }
 
-  #about-us .row .col .card-body .btn {
+  /* #about-us .row .col .card-body .btn {
     width: 18%;
-  }
+  } */
 
   /* service */
   .mobile-services {
     display: none;
+  }
+
+  /* contact */
+  #contact .row {
+    display: grid;
+    grid-template-columns: 4% auto;
   }
 
   /* footer */
@@ -399,14 +426,20 @@
     font-size: 1.5rem !important;
   }
 
-  #about-us .row .col .card-body .btn {
+  /* #about-us .row .col .card-body .btn {
     font-size: 1.2rem;
     width: 18%;
-  }
+  } */
 
   /* service */
   .mobile-services {
     display: none;
+  }
+
+  /* contact */
+  #contact .row {
+    display: grid;
+    grid-template-columns: 3% auto;
   }
 
   /* footer */
@@ -433,7 +466,7 @@
 }
 
 .single-testimony {
-  border: 5px solid #ffffff;
+  border: 0.2rem solid #ffffff;
   border-radius: 2rem;
   padding: 5%;
   margin: 1% 15%;
@@ -484,10 +517,6 @@
 }
 
 /* OUR CLIENTS */
-.our-clients {
-  padding-bottom: 70px;
-}
-
 #our-clients .container .row.mb-4 .col {
   align-self: center;
   cursor: pointer;
@@ -498,17 +527,21 @@
   filter: grayscale(0);
 }
 
-.title-clients {
+/* .our-clients {
+  padding-bottom: 70px;
+} */
+
+/* .title-clients {
   margin-top: -2rem;
   margin-bottom: -1rem;
-}
+} */
 
-.sub-clients {
+/* .sub-clients {
   padding: 2rem 6rem;
-}
+} */
 
 /* ARTICLE */
-#article{
+#article {
   gap: 2%;
 }
 
@@ -525,11 +558,6 @@ body > section:nth-child(9) > div > div.owl-nav > button.owl-next > span {
 }
 
 /* CONTACT */
-.contact {
-  /* padding-bottom: 70px; */
-  background-color: #d9d9d942;
-}
-
 .location {
   width: 20rem;
   height: 12.5rem;
