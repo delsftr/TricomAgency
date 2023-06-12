@@ -111,6 +111,30 @@
     font-size: 0.8rem !important;
   }
 
+  /* navbar */
+  /* .nav-top .container .offcanvas{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #ffffff;
+    width: 10rem;
+    height: 100vh;
+  } */
+
+  .top-nav .container .offcanvas{
+    /* top: 4rem; */
+    right: -12rem;
+    background-color: #fafafa;
+  }
+
+  .top-nav .container .navbar-toggler{
+    color: #fafafa;
+  }
+
+  .top-nav .container .offcanvas .navbar-nav .dropdown-menu{
+    background-color: #fafafa;
+  }
+
   /* homepage */
   .title-hp {
     padding-top: 30%;
@@ -118,7 +142,6 @@
   }
 
   .sub-title {
-    font-size: 0.8rem;
     padding-right: 35%;
   }
 
@@ -140,17 +163,48 @@
     padding-top: 5%;
   }
 
-  .btn {
+  #about-us .row .col .card-body .btn {
     background-color: var(--dark-blue);
     /* width: 35%; */
     justify-self: center;
-    /* margin-top: -5%; */
+    margin-top: -5%;
   }
 
   /* service */
   #services {
     display: none;
   }
+
+  .mobile-services .services-content .card .card-body .btn{
+    background-color: #1b325e;
+    width: 36%;
+    font-size: 0.8rem;
+  }
+
+  .mobile-services .services-content .owl-dots button {
+    background-color: #0659a7 !important;
+    width: 0.5rem;
+    height: 0.3rem;
+    border-radius: 1rem;
+    margin-right: 1%;
+    transition: 0.3s;
+  }
+  
+  .mobile-services .services-content .owl-dots button.active {
+    width: 15px;
+  }
+
+  /* .owl-carousel .owl-stage-outer */
+
+/* .pagination a.active {
+  text-decoration: underline;
+  color: #0d6efd;
+  background-color: dodgerblue;
+  color: white;
+} */
+
+/* Add a grey background color on mouse-over */
+/* .pagination a:hover:not(.active) {text-decoration: underline;} */
 
   /* .mobile-services .service-content .card .card-body .title{
     text-align: center;
@@ -186,6 +240,19 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  #our-clients .sub-clients{
+    margin-bottom: 0rem !important;
+  }
+
+  /* article */
+  #article .owl-carousel .owl-nav{
+    display: none;
+  }
+
+  #article .owl-carousel .owl-dots{
+    display: none;
+  }
+
   /* contact */
   #contact .r-info {
     display: grid;
@@ -194,7 +261,7 @@
 
   .location {
     align-self: center;
-    width: 19rem !important;
+    width: 20rem !important;
     height: 13rem !important;
   }
 

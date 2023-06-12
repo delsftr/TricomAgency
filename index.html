@@ -13,25 +13,29 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
 
   <!-- ICONS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"/>
 </head>
 
 <body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 
   <!--NAVBAR DESKTOP-->
   <nav class="side-nav nav-container">
     <div class="container-fluid">
       <a class="navbar-brand" href="#homepage">
-        <img src="assets/img/LOGO TRICOM-04 1.png" alt="Bootstrap" width="80" height="60" />
+        <img src="assets/img/LOGO TRICOM-04 1.png" alt="Tricom" width="80" height="60" />
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
     </div>
-    <div class="side-nav" id="navbarNav">
+    <div class="side-nav">
       <ul class="nav-menu p-0">
         <li class="nav-item">
           <a href="#about-us" class="text-decoration-none"><i class="about-us"></i><span class="menu-text text-dark">About Us</span></a>
@@ -48,35 +52,35 @@
   <!-- NAVBAR END-->
 
   <!--NAVBAR TABLET & MOBILE-->
-  <nav class="top-nav nav-container-tab bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#homepage">
-        <img src="assets/img/LOGO TRICOM-04 1.png" alt="Bootstrap" width="50" height="50">
-      </a>
+  <nav class="top-nav navbar bg-light sticky-top shadow-lg">
+    <div class="container ps-3">
+      <a class="navbar-brand" href="#homepage"><img src="assets/img/LOGO TRICOM-04 1.png" alt="Tricom" width="60" height="50"></a>
+      <button class="navbar-toggler border-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <p class="offcanvas-title text" id="offcanvasNavbarLabel">Welcome,</p>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="navbar-nav offcanvas-body text">
+          <a class="nav-link" href="#about-us">About Us</a>
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu text" style="border: none;">
+            <a class="dropdown-item" href="social-media.html">Social Media</a>
+            <a class="dropdown-item" href="photography.html">Photography</a>
+            <a class="dropdown-item" href="video-production.html">Video Production</a>
+            <a class="dropdown-item" href="web-design.html">Web Design</a>
+          </ul>
+          <a class="nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
     </div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-      aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome!</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
   </nav>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <!-- NAVBAR END-->
 
   <!--HOMEPAGE-->
@@ -138,7 +142,7 @@
   <!-- OUR SERVICES -->
   <section class="container-fluid services bg-grey" id="services">
     <p class="title fs-1 fw-bold">Our Services</p>
-    <div class="row" id="categories">
+    <div class="row" id="categories" data-aos="fade-right">
       <div class="col-md-3">
         <div class="card text-center" id="btncard">
           <ul class="list-group list-group-flush">
@@ -150,7 +154,8 @@
         </div>
       </div>
 
-      <div class="col" id="details">
+      <div class="col" id="details" data-aos="flip-right" data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
         <div class="card" id="itm" style="height: 100%;">
           <div class="row r-services" id="products">
             <!-- <div id="products"></div> -->
@@ -196,7 +201,7 @@
       <div class="card">
         <img src="assets/img/video-production.jpg" style="height: 25rem;" alt="">
         <div class="card-body text-center d-grid gap-2">
-          <div class="c-title fw-semibold">Video production</div>
+          <div class="c-title fw-semibold">Video Production</div>
           <div class="text lh-base fw-light justify-content-center">Video production has become a crucial component of modern business. With the help of TRICOM, you can effectively and economically engage with customers, create brand recognition, and boost sales.
           </div>
           <a href="video-production.html" class="btn btn-primary text text-white rounded-5 border-0 fw-light">Learn More</a>
@@ -245,6 +250,62 @@
       });
     </script>
   </section>
+  <!-- END -->
+
+  <!-- OUR CLIENTS -->
+  <section class="container-fluid our-clients" id="our-clients" data-aos="zoom-in">
+    <p class="title fs-1 fw-bold text-center">Our Satisfied Clients</p>
+    <p class="sub-clients text fw-light text-center text-dark">We've have the pleasesure of working with many amazing clients.</p>
+    <div class="brand d-grid">
+      <div class="col">
+        <img src="assets/img/logo-jn.png" class="img-fluid rounded-2 border-5" alt="...">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-YesCare.png" class="img-fluid rounded-2" alt="...">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-chitose.png" class="img-fluid rounded-2" alt="...">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-cpro.png" class="img-fluid rounded-2" alt="...">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-Fiore.png" class="img-fluid rounded-2" alt="...">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-bellini.png" class="img-fluid rounded-2" alt="...">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-yukshopping2.png" class="img-fluid rounded-2" alt="...">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-jobb.png" class="img-fluid rounded-2" alt="..." style="width: 70%;">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-medico.png" class="img-fluid rounded-2" alt="...">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-incozy.png" class="img-fluid rounded-2" alt="...">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-spoon.png" class="img-fluid rounded-2" alt="...">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-swoosh.png" class="img-fluid rounded-2" alt="...">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-monster.png" class="img-fluid rounded-2" alt="..." style="width: 50%;">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-zao.png" class="img-fluid rounded-2" alt="..." style="width: 70%;">
+      </div>
+      <div class="col">
+        <img src="assets/img/logo-Embun.png" class="img-fluid rounded-2" alt="..." style="width: 50%;">
+      </div>
+    </div>
+    <p class="sub-clients text fw-light text-center text-dark">Sudah banyak perusahaan yang telah mempercayakan brandnya untuk dikelola oleh agensi kami. Ayo mulai wujudkan brand impian mu bersama kami!</p>
+  </section>
+  <!-- OUR CLIENTS END -->
 
   <!-- CUSTOMER TESTIMONY -->
   <section class="container-fluid customer-testimony">
@@ -322,61 +383,6 @@
   </section>
   <!-- CUSTOMER TESTIMONY END -->
 
-  <!-- OUR CLIENTS -->
-  <section class="container-fluid our-clients bg-grey" id="our-clients">
-    <p class="title fs-1 fw-bold text-center">Our Satisfied Clients</p>
-    <p class="sub-clients text fs-5 fw-light text-center text-dark">We've have the pleasesure of working with many amazing clients.</p>
-    <div class="brand d-grid">
-      <div class="col">
-        <img src="assets/img/logo-jn.png" class="img-fluid rounded-2 border-5" alt="...">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-YesCare.png" class="img-fluid rounded-2" alt="...">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-chitose.png" class="img-fluid rounded-2" alt="...">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-cpro.png" class="img-fluid rounded-2" alt="...">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-Fiore.png" class="img-fluid rounded-2" alt="...">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-bellini.png" class="img-fluid rounded-2" alt="...">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-yukshopping2.png" class="img-fluid rounded-2" alt="...">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-jobb.png" class="img-fluid rounded-2" alt="..." style="width: 70%;">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-medico.png" class="img-fluid rounded-2" alt="...">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-incozy.png" class="img-fluid rounded-2" alt="...">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-spoon.png" class="img-fluid rounded-2" alt="...">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-swoosh.png" class="img-fluid rounded-2" alt="...">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-monster.png" class="img-fluid rounded-2" alt="..." style="width: 50%;">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-zao.png" class="img-fluid rounded-2" alt="..." style="width: 70%;">
-      </div>
-      <div class="col">
-        <img src="assets/img/logo-Embun.png" class="img-fluid rounded-2" alt="..." style="width: 50%;">
-      </div>
-    </div>
-    <p class="sub-clients text fs-5 fw-light text-center text-dark">Sudah banyak perusahaan yang telah mempercayakan brandnya untuk dikelola oleh agensi kami. Ayo mulai wujudkan brand impian mu bersama kami!</p>
-  </section>
-  <!-- OUR CLIENTS END -->
-
   <!-- ARTICLE -->
   <section class="container-fluid" id="article">
     <p class="title fs-1 fw-bold">Latest Article</p>
@@ -385,33 +391,33 @@
       <img src="assets/img/article.jpg" alt="article-1">
       <div class="card-body text-center">
         <div class="title fs-5 fw-semibold mb-2">Hello World!</div>
-        <div class="text lh-base">
+        <div class="text lh-base fw-light">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum unde voluptates aperiam quam rem, aliquid magnam consequuntur quod fugiat labore laudantium odit praesentium ut atque rerum vel commodi quidem quos.
         </div>
         <br>
-        <a href="article-1.html" class="card-link text-decoration-none">READ MORE</a>
+        <a href="article-1.html" class="card-link text-decoration-none fw-light">READ MORE</a>
       </div>
     </div>
     <div class="card">
       <img src="assets/img/article.jpg" alt="article-2">
       <div class="card-body text-center">
         <div class="title fs-5 fw-semibold mb-2">Hello World!</div>
-        <div class="text lh-base">
+        <div class="text lh-base fw-light">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum unde voluptates aperiam quam rem, aliquid magnam consequuntur quod fugiat labore laudantium odit praesentium ut atque rerum vel commodi quidem quos.
         </div>
         <br>
-        <a href="article-2.html" class="card-link text-decoration-none">READ MORE</a>
+        <a href="article-2.html" class="card-link text-decoration-none fw-light">READ MORE</a>
       </div>
     </div>
     <div class="card">
       <img src="assets/img/article.jpg" alt="article-3">
       <div class="card-body text-center">
         <div class="title fs-5 fw-semibold mb-2">Hello World!</div>
-        <div class="text lh-base">
+        <div class="text lh-base fw-light">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum unde voluptates aperiam quam rem, aliquid magnam consequuntur quod fugiat labore laudantium odit praesentium ut atque rerum vel commodi quidem quos.
         </div>
         <br>
-        <a href="article-3.html" class="card-link text text-decoration-none">READ MORE</a>
+        <a href="article-3.html" class="card-link text text-decoration-none fw-light">READ MORE</a>
       </div>
     </div>
   </div>
@@ -470,7 +476,7 @@
           <i class="bi bi-geo-alt fw-bold" style="color: #0659a7; font-size: 25px;"></i>
         </div>
         <div class="col">
-          <p>Trisula Center <br> Jalan Lingkar Luar Barat Blok A - B 1, RT.14/RW.14, Rw. Buaya, Kecamatan Cengkareng, Kota Jakarta Barat, Daerah
+          <p>Trisula Center<br> Jalan Lingkar Luar Barat Blok A - B 1, RT.14/RW.14, Rw. Buaya, Kecamatan Cengkareng, Kota Jakarta Barat, Daerah
             Khusus Ibukota Jakarta 11740</p>
         </div>
       </div>

@@ -1,3 +1,9 @@
+// const navbarNav = document.querySelector(".navbar-nav");
+
+// document.querySelector("#hamburger-menu").onclick = () => {
+//   navbarNav.classList.toggle("active");
+// };
+
 const btncard = [
   {
     id: 1,
