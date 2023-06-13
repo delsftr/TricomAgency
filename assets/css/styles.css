@@ -88,11 +88,6 @@
   font-family: "Rubik", sans-serif;
 }
 
-/* ABOUT US */
-/* #about-us .row .col .card-body .btn {
-  background-color: var(--dark-blue);
-} */
-
 /* MEDIA QUERY */
 
 /* MOBILE */
@@ -113,6 +108,11 @@
 
   .text {
     font-size: 0.8rem !important;
+  }
+
+  .c-title{
+    font-size: 1.2rem !important;
+    color: #0659a7;
   }
 
   /* navbar */
@@ -150,12 +150,13 @@
   }
 
   #about-us .row .col .card-body {
-    text-align: center !important;
+    text-align: justify;
   }
 
   #about-us .row .col .card-title {
     font-size: 1.2rem !important;
-    padding-top: 5%;
+    padding: 5% 2% 0 2%;
+    text-align: center;
   }
 
   #about-us .row .col .card-body .btn {
@@ -169,15 +170,24 @@
   zao = 70%
   embun 50%*/
 
+  #our-clients .title{
+    margin-bottom: 1%;
+  }
+
   /* service */
   #services {
     display: none;
+  }
+
+  .mobile-services .services-content .card .card-body .text{
+    text-align: justify;
   }
 
   .mobile-services .services-content .card .card-body .btn {
     width: 36%;
     font-size: 0.8rem !important;
     justify-self: center;
+    margin-top: 2%;
   }
 
   .mobile-services .services-content .owl-dots button {
@@ -244,6 +254,10 @@
   }
 
   /* article */
+  #article .owl-carousel .card .card-body .text{
+    text-align: justify;
+  }
+
   #article .owl-carousel .owl-nav {
     display: none;
   }
@@ -266,7 +280,7 @@
 
   /* footer */
   .footer {
-    padding: 7% 15% 0% 15%;
+    padding: 7% 15% 2% 15%;
     text-align: center;
   }
 
@@ -275,21 +289,22 @@
   }
 
   .footer .r-copyright .copyright {
-    font-size: 0.7rem;
+    font-size: 0.6rem !important;
   }
 
   .footer .r-copyright .sosmed {
     display: flex;
     justify-content: space-evenly;
+    /* padding-top: 5%; */
   }
 
-  .footer .trisula {
+  /* .footer .trisula {
     display: block;
     align-self: center;
-  }
+  } */
 
   .footer .trisula .logo img {
-    width: 5rem;
+    width: 4rem;
   }
 }
 
