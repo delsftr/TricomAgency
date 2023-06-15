@@ -206,9 +206,7 @@
           <img src="assets/img/video-production.jpg" style="height: 25rem" alt="" />
           <div class="card-body text-center d-grid gap-2">
             <div class="c-title fw-semibold">Video Production</div>
-            <div class="text lh-base fw-light">
-              Video production has become a crucial component of modern business. With the help of TRICOM, you can effectively and economically engage with customers, create brand recognition, and boost sales.
-            </div>
+            <div class="text lh-base fw-light">Video production has become a crucial component of modern business. With the help of TRICOM, you can effectively and economically engage with customers, create brand recognition.</div>
             <a href="video-production.html" class="btn btn-primary text text-white rounded-5 border-0 fw-light">Learn More</a>
           </div>
         </div>
@@ -445,10 +443,14 @@
                 nav: true,
               },
               600: {
-                items: 1,
+                items: 2,
                 nav: false,
               },
-              1000: {
+              900: {
+                items: 2,
+                nav: false,
+              },
+              1200: {
                 items: 3,
                 nav: true,
                 loop: false,
@@ -463,14 +465,14 @@
     <!-- CONTACT -->
     <section class="container-fluid contact bg-grey" id="contact">
       <p class="title fs-1 fw-bold">Let’s discuss your project!</p>
-      <div class="row r-maps">
+      <div class="d-grid flex-sm-column r-maps">
         <div class="col c-text text-decoration-none text">
           <div class="row r-info">
             <div class="col icon">
               <i class="fa-brands fa-whatsapp" style="color: #0659a7; font-size: 25px"></i>
             </div>
             <div class="col text-decoration-none">
-              <p>021-56920213</p>
+              <p class="text-decoration-none">021-56920213</p>
             </div>
           </div>
           <div class="row r-info">
@@ -494,7 +496,7 @@
           </div>
         </div>
         <!-- overflow-scroll -->
-        <div class="col">
+        <div class="col overflow-scroll">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666879455042!2d106.72665651476889!3d-6.175331995529216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f78167bb60d5%3A0x390ec47a1212cbca!2sTrisula%20Center!5e0!3m2!1sid!2sid!4v1683168836580!5m2!1sid!2sid"
             class="location"
@@ -507,8 +509,7 @@
     <!-- CONTACT END -->
 
     <!-- FOOTER -->
-    <footer class="footer">
-      <div class="col">
+    <!-- <footer class="footer">
         <div class="row trisula text-center d-block">
           <div class="col">
             <p class="text-white text">Powered by</p>
@@ -518,6 +519,10 @@
           </div>
         </div>
         <br />
+        <div class="row">
+          <p class="text text-white text-bold"></p>
+        </div>
+        <br>
         <div class="row r-copyright">
           <div class="col">
             <p class="copyright text text-white">
@@ -534,9 +539,32 @@
             <a href="https://www.youtube.com"><i class="bi bi-youtube" style="font-size: 25px; color: #ffffff"></i></a>
           </div>
         </div>
-      </div>
-    </footer>
+    </footer> -->
     <!-- FOOTER END -->
+
+    <div class="footer d-flex">
+      <div class="row trisula d-block">
+        <p class="text text-white" style="font-size: 0.8rem;">Powered by</p>
+        <img src="assets/img/trisula-corp.png" alt="" style="width: 15%" />
+      </div>
+      <div class="row pages">
+        <p class="title text-white text-bold">Pages</p>
+        <a class="text-white text-decoration-none" href="#">About Us</a>
+        <a class="text-white text-decoration-none" href="#">Testimony</a>
+        <a class="text-white text-decoration-none" href="#">Our Blog</a>
+      </div>
+      <div class="row services">
+        <p class="title text-white text-bold">Services</p>
+        <a class="text-white text-decoration-none" href="#">Social Media</a>
+        <a class="text-white text-decoration-none" href="#">Photography</a>
+        <a class="text-white text-decoration-none" href="#">Video Production</a>
+        <a class="text-white text-decoration-none" href="#">Web Design</a>
+      </div>
+      <div class="row contact">
+        <p class="text-white text-decoration-none" class="title text-white text-bold">Contact</p>
+        <a class="text-white text-decoration-none" href="#">Get in Touch</a>
+      </div>
+    </div>
 
     <script src="assets/js/services.js"></script>
   </body>
