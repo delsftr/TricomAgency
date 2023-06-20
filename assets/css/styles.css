@@ -31,6 +31,7 @@
 
 .title {
   color: #0659a7;
+  font-family: "Poppins", sans-serif;
 }
 
 .text {
@@ -678,36 +679,36 @@
 }
 
 .single-testimony {
-  border: 0.2rem solid #ffffff;
+  border: 0.15rem solid #ffffff;
   border-radius: 2rem;
-  padding: 5%;
-  margin: 1% 15%;
+  padding: 11%;
+  margin: 0% 5%;
 }
 
 .single-testimony:before {
   content: "\f10d";
   font-family: FontAwesome;
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 3rem;
   position: absolute;
   background: #5f3daf;
-  left: 130px;
-  top: -35px;
-  width: 100px;
-  height: 100px;
+  left: -5px;
+  top: -30px;
+  width: 80px;
+  height: 80px;
 }
 
 .single-testimony:after {
   content: "\f10e";
   font-family: FontAwesome;
   color: #ffffff;
-  font-size: 4rem;
+  font-size: 3rem;
   position: absolute;
   background: #5f3daf;
-  right: 130px;
-  bottom: -5px;
-  width: 100px;
-  height: 100px;
+  right: 0px;
+  bottom: -10px;
+  width: 80px;
+  height: 80px;
 }
 
 .owl-dots {

@@ -313,7 +313,7 @@
 
     <!-- CUSTOMER TESTIMONY -->
     <section class="container-fluid customer-testimony">
-      <p class="title fs-1 fw-bold text-center">What They Say?</p>
+      <p class="title fs-1 mb-3 fw-bold text-center">What They Say?</p>
       <div class="testimony-content owl-carousel text">
         <div class="single-testimony text-center text-white lh-lg">
           <p>
@@ -362,7 +362,7 @@
         $(document).ready(function () {
           $(".testimony-content").owlCarousel({
             loop: true,
-            margin: 50,
+            margin: 10,
             autoplay: true,
             autoplayTimeout: 5000,
             smartSpeed: 1500,
@@ -374,11 +374,16 @@
                 dots: true,
               },
               600: {
-                items: 1,
+                items: 2,
                 // nav:false,
                 dots: true,
               },
-              1000: {
+              900: {
+                items: 2,
+                // nav:false,
+                dots: true,
+              },
+              1200: {
                 items: 3,
                 // nav:true,
                 loop: false,
