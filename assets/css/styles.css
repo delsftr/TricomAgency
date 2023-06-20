@@ -267,32 +267,45 @@
   }
 
   /* footer */
-  /* .footer {
-    padding: 7% 15% 2% 15%;
+  .footer {
+    padding: 7% 10% 5% 10% !important;
     text-align: center;
   }
 
-  .footer .r-copyright {
+  .footer .row{
+    justify-content: center;
+  }
+
+  .footer .page{
+    display: none;
+  }
+
+  .footer .col-4{
+    margin-left: 0% !important;
+    width: 100%;
+  }
+
+  .footer .row hr{
+    display: none;
+  }
+
+  .footer .row .r-copyright{
     flex-direction: column-reverse;
   }
 
-  .footer .r-copyright .copyright {
+  .footer .row .r-copyright .col-10{
+    align-self: center;
+    margin-right: 0 !important;
+  }
+
+  .footer .row .r-copyright .col-10 .copyright{
     font-size: 0.6rem !important;
   }
 
-  .footer .r-copyright .sosmed {
-    display: flex;
-    justify-content: space-evenly;
+  .footer .row .r-copyright .col .social-icons .instagram{
+    margin-right: 30% !important;
   }
 
-  .footer .trisula {
-    display: block;
-    align-self: center;
-  }
-
-  .footer .trisula .logo img {
-    width: 4rem;
-  } */
 }
 
 /* MOBILE LANDSCAPE*/
@@ -774,10 +787,6 @@
   padding: 2% 10% 2% 15%;
 }
 
-.footer .trisula{
-  margin-right: -20%;
-}
-
-.footer .pages{
-  margin-right: 20%;
+.footer .row .col-10 .copyright{
+  font-size: 0.8rem;
 }
