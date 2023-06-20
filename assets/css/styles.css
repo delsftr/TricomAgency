@@ -123,6 +123,15 @@
     background-color: #fafafa;
   }
 
+  .top-nav .container .offcanvas .offcanvas-header{
+    margin-top: 5%;
+  }
+
+  .top-nav .container .offcanvas .navbar-nav .text-success{
+    width: 45%;
+    color: #1b325e !important;
+  }
+
   .top-nav .container .navbar-toggler {
     color: #fafafa;
   }
