@@ -2,10 +2,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 :root {
+  --blue: #0659a7;
   --dark-blue: #1b325e;
   --white: #ffffff;
   --black: #000000;
   --grey: #fafafa;
+  --dark-grey: #d9d9d942;
 }
 
 * {
@@ -18,11 +20,11 @@
 }
 
 .bg-grey {
-  background-color: #d9d9d942;
+  background-color: var(--dark-grey);
 }
 
-.btn{
-  background-color: #1b325e;
+.btn {
+  background-color: var(--dark-blue);
 }
 
 .footer {
@@ -30,7 +32,7 @@
 }
 
 .title {
-  color: #0659a7;
+  color: var(--blue);
   font-family: "Poppins", sans-serif;
 }
 
@@ -70,9 +72,59 @@
   margin-bottom: 4.5rem !important;
 }
 
+/* .nav-item a:active{
+  color: #0d6efd;
+  text-decoration: underline !important;
+} */
+
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  background-color: #0659a7;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -2px;
+  transition: 0.3s;
+}
+
+.nav-item a:hover::after {
+  width: 100%;
+}
+
+/* .nav-item a:active{
+ text-decoration: underline !important;
+ color: #0659a7;
+} */
+
 /* NAVBAR TABLET & MOBILE */
 .top-nav {
   background-color: var(--grey);
+}
+
+.top-nav .container .offcanvas {
+  right: -12rem;
+  background-color: var(--grey);
+}
+
+.top-nav .container .offcanvas .offcanvas-header {
+  margin-top: 5%;
+}
+
+.top-nav .container .navbar-toggler {
+  color: #fafafa;
+}
+
+.top-nav .container .offcanvas .navbar-nav .dropdown-menu {
+  background-color: #fafafa;
+}
+
+.top-nav .container .offcanvas .navbar-nav .nav-link {
+  padding-bottom: 1.5rem;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--blue);
+  color: var(--black);
 }
 
 /* HOMEPAGE */
@@ -87,6 +139,23 @@
 
 .title-hp {
   font-family: "Rubik", sans-serif;
+}
+
+/* MOBILE-SERVICES */
+.mobile-services .services-content .card .card-body .text {
+  text-align: justify;
+}
+
+.mobile-services .services-content .card .card-body .btn {
+  justify-self: center;
+  margin-top: 2%;
+}
+
+.mobile-services .services-content .owl-dots button {
+  background-color: var(--blue) !important;
+  border-radius: 1rem;
+  margin-right: 1%;
+  transition: 0.3s;
 }
 
 /* MEDIA QUERY */
@@ -111,33 +180,22 @@
     font-size: 0.8rem !important;
   }
 
-  .c-title{
+  .c-title {
     font-size: 1rem !important;
-    color: #0659a7;
+    color: var(--blue);
   }
 
   /* navbar */
   .top-nav .container .offcanvas {
-    /* top: 4rem; */
     right: -12rem;
-    background-color: #fafafa;
   }
 
-  .top-nav .container .offcanvas .offcanvas-header{
-    margin-top: 5%;
+  .top-nav .container .offcanvas .navbar-nav {
+    margin-right: 12rem;
   }
 
-  .top-nav .container .offcanvas .navbar-nav .text-success{
-    width: 45%;
-    color: #1b325e !important;
-  }
-
-  .top-nav .container .navbar-toggler {
-    color: #fafafa;
-  }
-
-  .top-nav .container .offcanvas .navbar-nav .dropdown-menu {
-    background-color: #fafafa;
+  .top-nav .container .offcanvas .offcanvas-sosmed .text {
+    margin-left: 1.2rem !important;
   }
 
   /* homepage */
@@ -185,24 +243,14 @@
     display: none;
   }
 
-  .mobile-services .services-content .card .card-body .text{
-    text-align: justify;
-  }
-
   .mobile-services .services-content .card .card-body .btn {
     width: 36%;
     font-size: 0.8rem !important;
-    justify-self: center;
-    margin-top: 2%;
   }
 
   .mobile-services .services-content .owl-dots button {
-    background-color: #0659a7 !important;
     width: 0.5rem;
     height: 0.3rem;
-    border-radius: 1rem;
-    margin-right: 1%;
-    transition: 0.3s;
   }
 
   .mobile-services .services-content .owl-dots button.active {
@@ -256,12 +304,12 @@
   }
 
   /* article */
-  #article .owl-carousel .card .card-body .text{
+  #article .owl-carousel .card .card-body .text {
     text-align: justify;
   }
 
   /* contact */
-  #contact .title{
+  #contact .title {
     text-align: left;
   }
 
@@ -282,40 +330,39 @@
     text-align: center;
   }
 
-  .footer .row{
+  .footer .row {
     justify-content: center;
   }
 
-  .footer .page{
+  .footer .page {
     display: none;
   }
 
-  .footer .col-4{
+  .footer .col-4 {
     margin-left: 0% !important;
     width: 80%;
   }
 
-  .footer .row hr{
+  .footer .row hr {
     display: none;
   }
 
-  .footer .row .r-copyright{
+  .footer .row .r-copyright {
     flex-direction: column-reverse;
   }
 
-  .footer .row .r-copyright .col-10{
+  .footer .row .r-copyright .col-10 {
     align-self: center;
     margin-right: 0 !important;
   }
 
-  .footer .row .r-copyright .col-10 .copyright{
+  .footer .row .r-copyright .col-10 .copyright {
     font-size: 0.6rem !important;
   }
 
-  .footer .row .r-copyright .col .social-icons .instagram{
+  .footer .row .r-copyright .col .social-icons .instagram {
     margin-right: 30% !important;
   }
-
 }
 
 /* MOBILE LANDSCAPE*/
@@ -326,20 +373,38 @@
 
   .container-fluid {
     padding: 10%;
+    padding-top: 7%;
   }
 
   .title {
-    font-size: 1.7rem !important;
+    font-size: 1.5rem !important;
     text-align: center;
   }
 
   .text {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
 
-  .c-title{
-    font-size: 1.5rem !important;
-    color: #0659a7;
+  .c-title {
+    font-size: 1.2rem !important;
+    color: var(--blue);
+  }
+
+  /* navbar */
+  .top-nav .container .offcanvas {
+    right: -8rem;
+  }
+
+  .top-nav .container .offcanvas .navbar-nav {
+    margin-right: 8rem;
+  }
+
+  .top-nav .container .offcanvas .offcanvas-sosmed {
+    margin-left: 5.5rem !important;
+  }
+
+  .top-nav .container .offcanvas .offcanvas-sosmed .text {
+    margin-left: 0.5rem !important;
   }
 
   /* homepage */
@@ -362,14 +427,14 @@
   }
 
   #about-us .row .col .card-title {
-    font-size: 1.5rem !important;
+    font-size: 1.2rem !important;
     padding-top: 5%;
     text-align: center;
   }
 
   #about-us .row .col .card-body .btn {
     justify-self: center !important;
-    /* margin-top: -5%; */
+    margin-top: -3%;
   }
 
   /* service */
@@ -377,37 +442,27 @@
     display: none;
   }
 
-  .mobile-services .services-content .card .card-body .text{
+  /* .mobile-services .services-content .card .card-body .text{
     text-align: justify;
-  }
+  } */
 
-  .mobile-services .services-content .card img{
+  .mobile-services .services-content .card img {
     height: 50rem !important;
   }
 
   .mobile-services .services-content .card .card-body .btn {
-    width: 20%;
-    font-size: 1rem !important;
-    justify-self: center;
-    margin-top: 2%;
+    width: 19%;
+    font-size: 0.9rem !important;
   }
 
   .mobile-services .services-content .owl-dots button {
-    background-color: #0659a7 !important;
     width: 0.6rem;
     height: 0.4rem;
-    border-radius: 1rem;
-    margin-right: 1%;
-    transition: 0.3s;
   }
 
   .mobile-services .services-content .owl-dots button.active {
     width: 18px;
   }
-
-  /* #services .row .col-md-3 .card .list-group .list-group-item{
-    padding: 15% 2% 15% 2% !important;
-  } */
 
   /* clients */
   #our-clients .brand {
@@ -441,7 +496,7 @@
   }
 
   /* contact */
-  #contact .title{
+  #contact .title {
     text-align: left;
   }
 
@@ -457,23 +512,61 @@
   }
 
   /* footer */
-  /* .footer {
-    padding: 2% 5% 0% 15%;
+  .footer {
+    padding: 5% 7% 1% 7% !important;
   }
 
-  .footer .row .col {
-    grid-template-columns: 30% auto;
+  .footer .row .col-4 img {
+    width: 50% !important;
   }
 
-  .footer .trisula .logo img {
-    width: 5rem;
-  } */
+  .footer .row .col-4 {
+    margin-left: 0 !important;
+  }
+
+  .footer .row .page .c-title {
+    font-size: 1.2rem !important;
+  }
+
+  .footer .row .page .list-group .list-group-item .text {
+    font-size: 0.8rem !important;
+  }
+
+  .footer .row .r-copyright .col-10 {
+    margin-right: 0.4rem !important;
+  }
+
+  .footer .row .r-copyright .copyright {
+    font-size: 0.6rem;
+  }
+
+  .footer .row .r-copyright .col .social-icons .instagram {
+    margin-right: 2rem !important;
+  }
 }
 
 /* TABLET LANDSCAPE*/
 @media (min-width: 769px) and (max-width: 1024px) {
   .top-nav {
     display: none;
+  }
+
+  .title {
+    font-size: 1.7rem !important;
+  }
+
+  .text {
+    font-size: 0.9rem !important;
+  }
+
+  .c-title {
+    font-size: 1.4rem !important;
+    color: var(--blue);
+  }
+  
+  /* navbar */
+  .nav-container .side-nav .nav-menu .nav-item {
+    margin-bottom: 9.5rem !important;
   }
 
   /* homepage */
@@ -508,12 +601,11 @@
 
   /* clients */
   #our-clients .brand {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 5% !important;
   }
 
   /* contact */
-
-
   #contact .r-maps .c-text .r-info {
     display: grid;
     grid-template-columns: 15% auto !important;
@@ -539,6 +631,24 @@
     display: none;
   }
 
+  .title {
+    font-size: 1.9rem !important;
+  }
+
+  .text {
+    font-size: 1rem !important;
+  }
+
+  .c-title {
+    font-size: 1.3rem !important;
+    color: #0659a7;
+  }
+
+  /* navbar */
+  /* .nav-container .side-nav .nav-menu .nav-item {
+    margin-bottom: 12.5rem !important;
+  } */
+
   /* homepage */
   .title-hp {
     font-size: 4.5rem;
@@ -556,7 +666,8 @@
   }
 
   #about-us .row .col .card-body .btn {
-    width: 18%;
+    width: 19%;
+    margin-top: -2%;
   }
 
   /* service */
@@ -617,6 +728,19 @@
 @media (min-width: 1441px) and (max-width: 1950px) {
   .top-nav {
     display: none;
+  }
+
+  .title {
+    font-size: 2.5rem !important;
+  }
+
+  .text {
+    font-size: 1.5rem !important;
+  }
+
+  .c-title {
+    font-size: 2rem !important;
+    color: #0659a7;
   }
 
   /* homepage */
@@ -758,7 +882,7 @@
   margin-bottom: 0rem !important;
 }
 
-#our-clients .title{
+#our-clients .title {
   margin-bottom: 1%;
 }
 
@@ -789,14 +913,44 @@
 }
 
 .list-group-item.active-menu {
-  background-color: #1b325e;
+  background-color: var(--dark-blue);
   color: #ffffff;
 }
 
-.footer{
+.footer {
   padding: 2% 10% 2% 15%;
 }
 
-.footer .row .col-10 .copyright{
+/* .footer .row .col-10 .copyright{
   font-size: 0.8rem;
+} */
+
+/*  */
+
+.footer .row .col-4 img {
+  width: 30% !important;
+}
+
+.footer .row .col-4 {
+  margin-left: 0 !important;
+}
+
+.footer .row .page .c-title {
+  font-size: 1.2rem !important;
+}
+
+.footer .row .page .list-group .list-group-item .text {
+  font-size: 0.8rem !important;
+}
+
+.footer .row .r-copyright .col-10 {
+  margin-right: 0.4rem !important;
+}
+
+.footer .row .r-copyright .copyright {
+  font-size: 0.6rem;
+}
+
+.footer .row .r-copyright .col .social-icons .instagram {
+  margin-right: 2rem !important;
 }

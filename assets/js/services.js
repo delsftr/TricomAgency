@@ -1,9 +1,3 @@
-// const navbarNav = document.querySelector(".navbar-nav");
-
-// document.querySelector("#hamburger-menu").onclick = () => {
-//   navbarNav.classList.toggle("active");
-// };
-
 const btncard = [
   {
     id: 1,
@@ -34,7 +28,7 @@ const categories = [
 document.querySelector(".list-group").innerHTML = categories
   .map((btn, index) => {
     var { name, id } = btn;
-    return `<li class='list-group-item py-4 p ${index === 0 ? "active-menu" : ""}' style='cursor: pointer;' onclick='filteritem(this, ${id})'>${name}</li>`;
+    return `<li class='list-group-item text py-4 p ${index === 0 ? "active-menu" : ""}' style='cursor: pointer;' onclick='filteritem(this, ${id})'>${name}</li>`;
   })
   .join("");
 
@@ -98,8 +92,8 @@ const displayItem = (items) => {
                   <div class="col-md-4">
                       <img src="${image}" class="img-fluid" style="height:100%;" alt="...">
                   </div>
-                  <div class="col-md-8">
-                      <div class="card-body cb-services">
+                  <div class="col-md-8 my-auto">
+                      <div class="card-body cb-services text fw-light">
                           <div class="card-text">${text}</div>
                           <br>
                           <a href="${button}" class="btn btn-primary text-white rounded-5 border-0">Learn More</a>
